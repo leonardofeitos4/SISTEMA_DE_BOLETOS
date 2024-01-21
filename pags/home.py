@@ -69,7 +69,7 @@ def display_total_value(data, status):
 
 def main():
     fundo()
-    planilha_path = "boletos_jampa.xlsx"
+    planilha_path = "boletos_TESTES.xlsx"
     dados = read_data(planilha_path)
 
     sele = st.sidebar.selectbox(
@@ -77,7 +77,7 @@ def main():
         ('Nome', 'Situação'))
 
     if sele == 'Nome':
-        termo_busca = st.sidebar.text_input('Buscar por:', 'MERC.DO NEGO').upper()
+        termo_busca = st.sidebar.text_input('Buscar por:', 'Cliente').upper()
         dados_filtrados = filter_by_name(dados, termo_busca)
         display_data(dados_filtrados, f"do cliente ou mercado {termo_busca}")
 

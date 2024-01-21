@@ -9,7 +9,7 @@ acoes = ['Adicionar', 'Editar', 'Deletar']
 icons = ['bi bi-file-earmark-plus', "bi bi-pencil-square","bi bi-file-earmark-x"]
 
 
-with pd.ExcelFile('boletos_jampa.xlsx') as xls:
+with pd.ExcelFile('boletos_TESTES.xlsx') as xls:
         opcs = list(pd.read_excel(xls).NOME_CLIENTE.unique())
 
 

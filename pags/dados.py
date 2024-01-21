@@ -2,10 +2,10 @@ import openpyxl
 import pandas as pd
 
 
-arquivo_excel = 'boletos_jampa.xlsx'
+arquivo_excel = 'boletos_TESTES.xlsx'
 
 def get_data() -> pd.DataFrame:
-    with pd.ExcelFile('boletos_jampa.xlsx') as xls:
+    with pd.ExcelFile('boletos_TESTES.xlsx') as xls:
         return pd.read_excel(xls)
 
 def get_clientes():
